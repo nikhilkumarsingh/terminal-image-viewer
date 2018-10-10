@@ -14,7 +14,7 @@ def get_ansi_color_code(r, g, b):
 
 
 def get_color(r, g, b):
-    return f"\x1b[48;5;{int(get_ansi_color_code(r,g,b))}m \x1b[0m"
+    return "\x1b[48;5;{}m \x1b[0m".format(int(get_ansi_color_code(r,g,b)))
 
 
 def show_image(img_path):
